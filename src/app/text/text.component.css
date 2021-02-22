@@ -1,0 +1,49 @@
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    background-color: #f1f1f1;
+  }
+
+p {
+  font-size: 18px;
+  margin-left: 50px;
+}
+
+h2 {
+  margin-left: 50px;
+}
+
+input {
+  height: 30px;
+}
+
+::placeholder {
+  font-size: 11px;
+  padding-left: 10px;
+}
+
+input[type=button] {
+  background-color: rgb(4, 129, 255);
+  color: white;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  border: none;
+}
+
+div {
+  float: left;
+}
+
+.name {
+  font-size: 14px;
+  margin-left: 0px;
+}
+
+.info {
+  margin-left: 250px;
+}

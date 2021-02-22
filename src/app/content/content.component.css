@@ -1,0 +1,15 @@
+.body_sec { 
+    height: 750px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    float: right;
+    width: 1080px;
+} 
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+section {
+    padding-left: 350px;
+}

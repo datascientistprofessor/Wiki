@@ -1,0 +1,16 @@
+div {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 750px;
+    margin-top: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+  }
+  
+  li a {
+    width: 60px;
+    background-color: #f1f1f1;
+  }
