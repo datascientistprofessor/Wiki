@@ -24,6 +24,21 @@ input {
   padding-left: 10px;
 }
 
+button {
+  background-color: rgb(4, 129, 255);
+  color: white;
+  text-decoration: none;
+  margin: 4px 20px;
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  border: none;
+}
+
+.buttons {
+  padding-left: 270px;
+}
+
 input[type=button] {
   background-color: rgb(4, 129, 255);
   color: white;

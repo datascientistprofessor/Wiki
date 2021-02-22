@@ -22,6 +22,14 @@ export class TextComponent implements OnInit {
     this.countEvent.emit();
   }
   
+  Counter = 0;
+
+  like() {
+  this.Counter++;
+  }
+  dislike() {
+  this.Counter--;
+  }
 
   constructor() { }
 
