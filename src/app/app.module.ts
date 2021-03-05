@@ -10,6 +10,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { TextComponent } from './text/text.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ReverseStringPipe } from './pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProfileComponent } from './profile/profile.component';
     SidebarComponent,
     ContentComponent,
     TextComponent,
-    ProfileComponent
+    ProfileComponent,
+    ReverseStringPipe
   ],
   imports: [
     BrowserModule,

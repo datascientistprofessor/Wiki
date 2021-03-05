@@ -16,6 +16,8 @@ export class TextComponent implements OnInit {
   lastName: string = ''; 
   email: string = ''; 
 
+  vote: number = 0.834;
+
   callParent(): void {
     this.users.unshift({ name: this.name, lastName: this.lastName, email: this.email })
     alert('The data were successfully added!')

@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  name = 'Porfirije';
+  name = 'His name is Porfirije Mukalzharov';
 
   @Input() count: number=0;
 

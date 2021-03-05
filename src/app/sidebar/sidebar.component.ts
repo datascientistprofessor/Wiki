@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  curDate: Date = new Date();
+
   constructor() { }
 
   ngOnInit(): void {

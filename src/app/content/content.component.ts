@@ -13,6 +13,8 @@ export class ContentComponent implements OnInit {
 
   count: number = 0;
 
+  list = 'List of users';
+
   parent() {
     this.count++;
   }
