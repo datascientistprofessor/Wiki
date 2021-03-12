@@ -11,6 +11,7 @@ import { ContentComponent } from './content/content.component';
 import { TextComponent } from './text/text.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReverseStringPipe } from './pipes/reverse.pipe';
+import { LoggingService } from './services/logging.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { ReverseStringPipe } from './pipes/reverse.pipe';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

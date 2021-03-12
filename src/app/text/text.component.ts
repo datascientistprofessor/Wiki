@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { LoggingService } from '../services/logging.service';
 import { users } from '../users';
 
 @Component({
@@ -18,10 +19,13 @@ export class TextComponent implements OnInit {
 
   vote: number = 0.834;
 
+  constructor(private loggingService: LoggingService) { }
+
   callParent(): void {
     this.users.unshift({ name: this.name, lastName: this.lastName, email: this.email })
     alert('The data were successfully added!')
     this.countEvent.emit();
+    this.loggingService.logName(this.name);
   }
   
   Counter = 0;
@@ -32,8 +36,6 @@ export class TextComponent implements OnInit {
   dislike() {
   this.Counter--;
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }
