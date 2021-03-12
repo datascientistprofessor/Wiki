@@ -1,4 +1,3 @@
-import { findLast } from '@angular/compiler/src/directive_resolver';
 import { Component, OnInit } from '@angular/core';
 import { users } from '../users';
 

@@ -2,9 +2,10 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class LoggingService {
-    logName(message: string) {
-        let currentTime = new Date();
-        let currentTimeString = currentTime.toDateString() + currentTime.getTime();
-        console.log('${currentTimeString} :', message);
+    logName(message: string, message1: string, message2: string) {
+        console.log('The data was sended to a console!');
+        console.log('Name :', message);
+        console.log('Surname :', message1);
+        console.log('Email :', message2);
     }
 }

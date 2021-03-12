@@ -25,7 +25,7 @@ export class TextComponent implements OnInit {
     this.users.unshift({ name: this.name, lastName: this.lastName, email: this.email })
     alert('The data were successfully added!')
     this.countEvent.emit();
-    this.loggingService.logName(this.name);
+    this.loggingService.logName(this.name, this.lastName, this.email);
   }
   
   Counter = 0;
