@@ -11,6 +11,8 @@ export class ProfileComponent implements OnInit {
 
   @Input() count: number=0;
 
+  isDirty = true;
+
   constructor() { }
 
   ngOnInit(): void {

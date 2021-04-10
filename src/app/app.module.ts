@@ -12,6 +12,7 @@ import { TextComponent } from './text/text.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ReverseStringPipe } from './pipes/reverse.pipe';
 import { LoggingService } from './services/logging.service';
+import { AdminkaComponent } from './adminka/adminka.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,13 @@ import { LoggingService } from './services/logging.service';
     ContentComponent,
     TextComponent,
     ProfileComponent,
-    ReverseStringPipe
+    ReverseStringPipe,
+    AdminkaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [LoggingService],
   bootstrap: [AppComponent]

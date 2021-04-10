@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { users } from '../users';
 
 @Component({
@@ -18,9 +19,10 @@ export class ContentComponent implements OnInit {
     this.count++;
   }
 
-  constructor() { }
+  constructor(private ActivatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+    console.log(this.ActivatedRoute.snapshot.data);
   }
 
 }

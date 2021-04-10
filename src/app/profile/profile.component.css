@@ -10,7 +10,7 @@ h3, h4 {
     text-align: center;
 }
 
-p {
+p, a {
     text-align: left;
     margin-left: 70px;
 }
