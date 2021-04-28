@@ -6,6 +6,7 @@ import { AdminkaComponent } from './adminka/adminka.component';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponentComponent } from './login-component/login-component.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TextComponent } from './text/text.component';
 import { UnsavedGuard } from './unsaved.guard';
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'content', component: ContentComponent, resolve: {data: AccountInfoGuard}},
   {path: 'text', component: TextComponent},
   {path: 'profile', component: ProfileComponent, canDeactivate: [UnsavedGuard]},
-  {path: '', component: ContentComponent}
+  {path: '', component: ContentComponent},
+  {path: 'login', component: LoginComponentComponent},
 ];
 
 @NgModule({

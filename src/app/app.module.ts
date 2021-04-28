@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -13,6 +13,10 @@ import { ProfileComponent } from './profile/profile.component';
 import { ReverseStringPipe } from './pipes/reverse.pipe';
 import { LoggingService } from './services/logging.service';
 import { AdminkaComponent } from './adminka/adminka.component';
+import { AdminModuleModule } from './modules/admin-module/admin-module.module';
+import { ModelDrivenFormsComponent } from './ModelDrivenForms/model-driven-forms/model-driven-forms.component';
+import { TemplateDrivenFormsComponent } from './TemplateDrivenForms/template-driven-forms/template-driven-forms.component';
+import { LoginComponentComponent } from './login-component/login-component.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +29,17 @@ import { AdminkaComponent } from './adminka/adminka.component';
     ProfileComponent,
     ReverseStringPipe,
     AdminkaComponent,
+    ModelDrivenFormsComponent,
+    TemplateDrivenFormsComponent,
+    LoginComponentComponent,
+    LoginComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AdminModuleModule,
+    ReactiveFormsModule
   ],
   providers: [LoggingService],
   bootstrap: [AppComponent]

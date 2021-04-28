@@ -1,0 +1,13 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "Nurik" },
+      { "id": 2, "title": "posts", "author": "Nurik" },
+      { "id": 3, "title": "Serbian Patriarch", "author": "Nurik" }
+    ],
+    "comments": [
+      { "id": 1, "body": "Amazing", "postId": 1 },
+      { "id": 2, "body": "What the perfect content!", "postId": 2 },
+      { "id": 3, "body": "Cool", "postId": 2 }
+    ],
+    "profile": { "name": "Nurmukhambet" }
+}

@@ -6,6 +6,15 @@
 
     <app-text (countEvent)='parent()'></app-text>
 </div> 
+
+<div class="module">
+    <h3>Module</h3>
+    <a routerLink="/admin">Admin</a>    
+        <router-outlet></router-outlet>
+</div>
+
+<br>
+
 <h4>{{ list | lowercase }}</h4>
 <table class="styled-table">
     <thead>

@@ -1,0 +1,54 @@
+<div class="form">
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <b>Form valid is </b> {{contactForm.valid}}
+
+    <div>
+      <div>
+        <b>Info valid is </b> {{contactForm.valid}}
+        <p>
+          <label for="firstname">First Name </label>
+          <input type="text" #ref="ngModel" required id="firstname" name="firstname" ngModel>
+
+        </p>
+        <p>
+          <label for="lastname">Last Name </label>
+          <input type="text" #ref="ngModel" required id="lastname" name="lastname" ngModel>
+        </p>
+        <p>
+          <label for="email">Email </label>
+          <input type="text" #ref="ngModel" required id="email" name="email"  ngModel>
+        </p>
+      </div>
+
+
+
+      <div ngModelGroup="address">
+        <b>Address valid is </b> {{contactForm.valid}}
+        <p>
+          <label for="city">City</label>
+          <input type="text" #ref="ngModel" required id="city" name="city" ngModel>
+        </p>
+
+        <p>
+          <label for="street">Street</label>
+          <input type="text" #ref="ngModel" required id="street" name="street" ngModel>
+        </p>
+        <p>
+          <label for="pincode">Pin Code</label>
+          <input type="text" #ref="ngModel" required id="pincode" name="pincode"  ngModel>
+        </p>
+      </div>
+
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    </div>
+
+    <div [hidden]="ref.valid || ref.pristine">
+      Please enter a field
+    </div>
+
+  </form>
+</div>
+
+
